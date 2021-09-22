@@ -66,3 +66,24 @@
 // }
 
 // console.log(test3(10, 20));
+
+// 分割代入
+
+// const user = {
+//   name: "Kishi",
+//   age: 25,
+// }
+// const message1 = `私の名前は${user.name}です。年齢は${user.age}歳です。`;
+// console.log(message1);
+
+// const { name, age} = user;
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+// const user =["kishi", 25];
+// const message3 = `私の名前は${user[0]}です。年齢は${user[1]}歳です。`;
+// console.log(message3);
+
+// const [ name, age] = user;
+// const message4 = `私の名前は　${name}です。年齢は${age}歳です。`;
+// console.log(message4);
