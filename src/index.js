@@ -1,11 +1,44 @@
-import "./styles.css";
+// varは上書きも再宣言もできる
+// 開発規模が大きくなると、意図せずに上書きをしたり再宣言したりするリスクがある
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-  <p>テストです</p>
-</div>
-`;
+// var name = "hoshito";
+// console.log(name);
+
+// name = "kishi";
+// console.log(name);
+
+// var name = "星斗";
+// console.log(name);
+
+// letは上書きできるが、再宣言はできない
+
+// let name = "hoshito";
+// console.log(name);
+
+// name = "kishi";
+// console.log(name);
+
+// let name = "星斗";
+
+// constは上書きも再宣言もできない
+// だが、constで宣言したオブジェクトや配列は上書きしたり追加できたりする
+
+// const name = "hoshito";
+// console.log(name);
+
+// name = "kishi";
+// const name = "kishi";
+
+// const user = {
+//   name: "kishi",
+//   age: 25
+// }
+// user.name = "hoshito";
+// console.log(user);
+// console.log(user.name);
+
+// const animals = ["dog", "cat"];
+// animals[0] = "rabbit";
+// console.log(animals);
+// console.log(animals[0]);
+// animals.push("monkey");
