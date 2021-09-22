@@ -42,3 +42,27 @@
 // console.log(animals);
 // console.log(animals[0]);
 // animals.push("monkey");
+
+// 従来の関数
+// function test(name) {
+//   return name;
+// }
+
+// const test = function (name) {
+//   return name;
+// };
+
+// console.log(test("kishi"));
+
+// // アロー関数
+// const test2 = (age) => {
+//   return age;
+// }
+
+// console.log(test2(25));
+
+// const test3 =(num1, num2)=>{
+//   return num1 + num2;
+// }
+
+// console.log(test3(10, 20));
