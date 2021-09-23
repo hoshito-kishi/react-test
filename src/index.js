@@ -89,8 +89,38 @@
 // console.log(message4);
 
 // デフォルト値、引数
-const hello = (name = "ゲスト") => {
-  console.log(`こんにちは、${name}さん！`);
-};
+// const hello = (name = "ゲスト") => {
+//   console.log(`こんにちは、${name}さん！`);
+// };
 
-hello("kishi");
+// hello("kishi");
+
+//　スプレッド構文
+//①展開
+// const array1 = [1, 2];
+// console.log(array1);
+// console.log(...array1);
+// const sumNumber = (num1, num2)=>console.log(num1 + num2);
+// sumNumber(array1[0], array1[1]);
+// sumNumber(...array1);
+// ②まとめる
+// const array2 = [1, 2, 3, 4, 5];
+// console.log(array2);
+// const [num1, num2, ...array3] = array2;
+// console.log(num1);
+// console.log(num2);
+// console.log(array3);
+// ③配列のコピー、結合
+// const array4 = [10, 20];
+// const array5 = [30, 40];
+// const array6 = [...array4];
+// array6[0] = 100;
+// console.log(array6);
+// console.log(array4);
+// const array7 = [...array4, ...array5];
+// console.log(array7);
+// 普通にコピーすると参照元（array4）の値まで変わってしまう
+// const array8 = array4;
+// array8[0] = 100;
+// console.log(array8);
+// console.log(array4);
