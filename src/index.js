@@ -87,3 +87,10 @@
 // const [ name, age] = user;
 // const message4 = `私の名前は　${name}です。年齢は${age}歳です。`;
 // console.log(message4);
+
+// デフォルト値、引数
+const hello = (name = "ゲスト") => {
+  console.log(`こんにちは、${name}さん！`);
+};
+
+hello("kishi");
