@@ -124,3 +124,31 @@
 // array8[0] = 100;
 // console.log(array8);
 // console.log(array4);
+
+// mapやfilterの使い方
+// ①map
+const nameArray = ["田中", "山田", "岸"];
+// for(let i = 0; i < nameArray.length; i ++){
+//   console.log(`${i + 1}番目は${nameArray[i]}です`);
+// }
+// const nameArray2 = nameArray.map((name, index)=>{
+//   return `${index + 1}番目は${name}です`;
+// });
+// console.log(nameArray2);
+// const nameArray3 = nameArray.map((name, index) =>
+//   console.log(`${index}番目は${name}です`)
+// );
+// ②filter
+// const numberArray = [1, 2, 3, 4, 5];
+// const newNumberArray = numberArray.filter((number)=>{
+//   return number % 2 === 1;
+// });
+// console.log(newNumberArray);
+const newNameArray = nameArray.map((name) => {
+  if (name === "岸") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArray);
