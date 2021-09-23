@@ -127,7 +127,7 @@
 
 // mapやfilterの使い方
 // ①map
-const nameArray = ["田中", "山田", "岸"];
+// const nameArray = ["田中", "山田", "岸"];
 // for(let i = 0; i < nameArray.length; i ++){
 //   console.log(`${i + 1}番目は${nameArray[i]}です`);
 // }
@@ -144,11 +144,25 @@ const nameArray = ["田中", "山田", "岸"];
 //   return number % 2 === 1;
 // });
 // console.log(newNumberArray);
-const newNameArray = nameArray.map((name) => {
-  if (name === "岸") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArray);
+// const newNameArray = nameArray.map((name) => {
+//   if (name === "岸") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArray);
+
+// 三項演算子
+// const check = 1 < 0? "trueです" : "falseです";
+// console.log(check);
+
+// const number = 1200;
+// const checkedNumber =
+//   typeof number === "number" ? number.toLocaleString() : "数値を入力して下さい";
+// console.log(checkedNumber);
+
+const checkedNumber = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています！" : "許容範囲内です！";
+};
+console.log(checkedNumber(50, 10));
